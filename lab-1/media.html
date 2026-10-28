@@ -1,0 +1,111 @@
+<!--
+Matric Number: A219703
+Name: Muhammad Afiq bin Amran Amir
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Favorite Pictures</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body.space-bg {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #05050f;
+    }
+    body.space-bg::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('void.gif'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(0.9) contrast(1.2) saturate(1.25);
+      background-color: rgba(5, 5, 15, 0.35);
+      z-index: -1;
+    }
+    #iframe {
+      width: 100%;
+      height: 45px;
+      border: none;
+    }
+  </style>
+</head>
+<body class="space-bg text-light min-vh-100 d-flex flex-column justify-content-between">
+
+  <!-- Header -->
+  <div class="bg-black bg-opacity-75 py-4 border-bottom border-secondary text-center">
+    <div class="container">
+      <h1 class="display-6 fw-bold mb-0">My Favorite Pictures</h1>
+    </div>
+  </div>
+
+  <!-- Menu Iframe -->
+  <div class="bg-dark border-bottom border-secondary py-2">
+    <div class="container">
+      <iframe id="iframe" src="menu.html" title="Menu" class="rounded"></iframe>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container my-5 flex-grow-1">
+    <div class="card bg-dark text-light border border-secondary shadow-sm p-4">
+      <div class="card-body table-responsive">
+        <table id="tblpictures" class="table table-dark table-bordered align-middle text-center" width="100%" cellpadding="20" cellspacing="5">
+          <tr>
+            <th colspan="2" class="bg-secondary text-white">Pictures</th>
+          </tr>
+          <tr>
+            <th class="bg-black text-secondary">Static</th>
+            <th class="bg-black text-secondary">Animated</th>
+          </tr>
+          <tr>
+            <td align="center">
+              <img src="futsal.jpg" alt="Static Picture" class="img-fluid rounded" width="300">
+            </td>
+            <td align="center">
+              <img src="gojo.gif" alt="Animated GIF" class="img-fluid rounded" width="400">
+            </td>
+          </tr>
+          <tr>
+            <th class="bg-black text-secondary">Music</th>
+            <th class="bg-black text-secondary">Video</th>
+          </tr>
+          <tr>
+            <td align="center">
+              <audio controls class="w-100">
+                <source src="neckdeep.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td align="center">
+              <video width="320" height="240" controls class="img-fluid rounded">
+                <source src="winger.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-black text-white text-center py-4 border-top border-secondary">
+    <div class="container">
+      <p class="fw-semibold mb-1">Web Programming</p>
+      <p class="text-secondary mb-0">Copyright © 2026 Muhammad Afiq (A219703)</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
